@@ -1,0 +1,41 @@
+@import '../styles/Auth.css';
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left .illustration {
+  max-width: 80%;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  text-align: center;
+}
+
+.login-card .logo {
+  max-width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #222;
+}
+

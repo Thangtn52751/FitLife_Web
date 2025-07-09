@@ -1,0 +1,59 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import ProtectedRoute from '../components/ProtectedRoute';
+import Login          from '../pages/Login';
+import ForgotPassword from '../pages/ForgotPassword';
+import VerifyCode     from '../pages/VerifyCode';
+import ResetPassword  from '../pages/ResetPassword';
+import Success        from '../pages/Success';
+import Dashboard from '../pages/Dashboard';
+
+export default function MainNav() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+          path="/forgot-password"
+          element={
+              <ForgotPassword />
+          }
+        />
+        <Route
+          path="/verify-code"
+          element={
+            <ProtectedRoute>
+              <VerifyCode />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/reset-password"
+          element={
+            <ProtectedRoute>
+              <ResetPassword />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/success"
+          element={
+            <ProtectedRoute>
+              <Success />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard/>
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+}
