@@ -39,3 +39,20 @@
   color: #222;
 }
 
+.login-card {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #4169ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}

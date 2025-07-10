@@ -7,19 +7,18 @@ import ForgotPassword from '../pages/ForgotPassword';
 import VerifyCode     from '../pages/VerifyCode';
 import ResetPassword  from '../pages/ResetPassword';
 import Success        from '../pages/Success';
-import Dashboard from '../pages/Dashboard';
+import Dashboard      from '../pages/Dashboard';
+import Layout         from '../components/Layout';
 
 export default function MainNav() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public routes */}
         <Route path="/" element={<Login />} />
-        <Route
-          path="/forgot-password"
-          element={
-              <ForgotPassword />
-          }
-        />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+
+        {/* Auth flow */}
         <Route
           path="/verify-code"
           element={
@@ -45,11 +44,14 @@ export default function MainNav() {
           }
         />
 
+        {/* App (protected) */}
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard/>
+              <Layout>
+                <Dashboard />
+              </Layout>
             </ProtectedRoute>
           }
         />
