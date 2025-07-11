@@ -1,3 +1,5 @@
-import apiClient from "./apiClient";
+import apiClient from './apiClient';
 
-export const getAllExercises = () => apiClient.get('/exercises/');
+export function getAllExercises() {
+  return apiClient.get('/exercises');
+}
