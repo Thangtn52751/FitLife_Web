@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import React, { useEffect, useState, useMemo } from 'react';
 import { getAllUsers }     from '../api/userApi';
 import { getAllExercises } from '../api/exerciseAPI';
