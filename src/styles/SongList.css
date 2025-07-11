@@ -1,0 +1,127 @@
+.song-list-container {
+  padding: 24px;
+}
+
+.song-list-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.song-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.song-table th,
+.song-table td {
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  border-top: 1px solid #f0f0f0;
+}
+
+.song-table th {
+  background-color: #f9fafb;
+  color: #4b5563;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.song-image {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.truncate-text {
+  max-width: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #6b7280;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.edit-button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #3b82f6;
+  font-size: 1rem;
+}
+
+.song-summary {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 1rem;
+}
+
+.song-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.song-list-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.song-search-input {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: 1px solid #ddd;
+  font-size: 0.875rem;
+}
+
+
+
+.song-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.song-list-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.song-search-input {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: 1px solid #ddd;
+  font-size: 0.875rem;
+}
+
+.add-button {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+}
+

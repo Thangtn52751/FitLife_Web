@@ -9,6 +9,8 @@ import ResetPassword  from '../pages/ResetPassword';
 import Success        from '../pages/Success';
 import Dashboard      from '../pages/Dashboard';
 import Layout         from '../components/Layout';
+import SongList from '../pages/SongList';
+
 
 export default function MainNav() {
   return (
@@ -54,6 +56,17 @@ export default function MainNav() {
               </Layout>
             </ProtectedRoute>
           }
+        />
+
+        <Route 
+        path='/songs' 
+        element ={
+          <ProtectedRoute>
+        <Layout>
+        <SongList/>
+        </Layout>
+        </ProtectedRoute>
+        }
         />
       </Routes>
     </BrowserRouter>
