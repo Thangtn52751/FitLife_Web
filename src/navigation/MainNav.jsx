@@ -11,17 +11,16 @@ import Dashboard      from '../pages/Dashboard';
 import Layout         from '../components/Layout';
 import SongList from '../pages/SongList';
 
+
 export default function MainNav() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public routes */}
         <Route path="/" element={<Login />} />
-        <Route
-          path="/forgot-password"
-          element={
-              <ForgotPassword />
-          }
-        />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+
+        {/* Auth flow */}
         <Route
           path="/verify-code"
           element={
@@ -47,11 +46,14 @@ export default function MainNav() {
           }
         />
 
+        {/* App (protected) */}
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard/>
+              <Layout>
+                <Dashboard />
+              </Layout>
             </ProtectedRoute>
           }
         />
