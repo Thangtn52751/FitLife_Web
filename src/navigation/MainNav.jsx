@@ -7,7 +7,9 @@ import ForgotPassword from '../pages/ForgotPassword';
 import VerifyCode     from '../pages/VerifyCode';
 import ResetPassword  from '../pages/ResetPassword';
 import Success        from '../pages/Success';
-import Dashboard from '../pages/Dashboard';
+import Dashboard      from '../pages/Dashboard';
+import Layout         from '../components/Layout';
+import SongList from '../pages/SongList';
 
 export default function MainNav() {
   return (
@@ -52,6 +54,17 @@ export default function MainNav() {
               <Dashboard/>
             </ProtectedRoute>
           }
+        />
+
+        <Route 
+        path='/songs' 
+        element ={
+          <ProtectedRoute>
+        <Layout>
+        <SongList/>
+        </Layout>
+        </ProtectedRoute>
+        }
         />
       </Routes>
     </BrowserRouter>
