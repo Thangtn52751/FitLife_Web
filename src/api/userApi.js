@@ -19,4 +19,7 @@ export const changePassword = data =>
   apiClient.put('/users/change-password', data);
 
 export const createEmployee = data =>
-  apiClient.post('/users/employee', data);
+  apiClient.post('/users/employees', data);
+
+export const updateUserById = (id, data) =>
+   apiClient.put(`/users/${id}`, data);
