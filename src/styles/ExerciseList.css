@@ -1,0 +1,112 @@
+.exercise-container {
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.exercise-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-table th,
+.exercise-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.exercise-table th {
+    background-color: #f5f7fa;
+    color: #333;
+    font-weight: 600;
+}
+
+.exercise-table tr:hover {
+    background-color: #f0f4ff;
+}
+
+.exercise-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.exercise-action-link {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.exercise-edit-icon {
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+.exercise-edit-icon:hover {
+    color: #1976d2;
+}
+
+.exercise-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exercise-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 500px;
+}
+
+.exercise-close-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exercise-close-btn:hover {
+    background-color: #135ba1;
+}
+
+.exercise-modal-content label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.exercise-modal-content input,
+.exercise-modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
